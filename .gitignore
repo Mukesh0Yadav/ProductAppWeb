@@ -1,0 +1,21 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore temporary files
+*.log
+*.tlog
+*.cache
+
+# Ignore user secrets and config transforms
+secrets.json
+appsettings.*.json
+
+# Ignore ReSharper/JetBrains Rider
+.idea/
+*.DotSettings.user
