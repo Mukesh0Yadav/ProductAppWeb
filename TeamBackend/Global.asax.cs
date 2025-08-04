@@ -6,6 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using TeamBackend.App_Start;
+using TeamBackend.Models;
 
 namespace TeamBackend
 {
@@ -15,6 +17,8 @@ namespace TeamBackend
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            UnityConfig.RegisterComponents();
+            //TeamBackend.App_Start.SwaggerConfig.Register();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
